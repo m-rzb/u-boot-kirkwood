@@ -5057,6 +5057,7 @@
 #define MACH_TYPE_NASM25               5112
 #define MACH_TYPE_TOMATO               5113
 #define MACH_TYPE_OMAP3_MRC3D          5114
+#define MACH_TYPE_HNCN2                5158
 #endif
 
 #ifdef CONFIG_MACH_NSA310
@@ -5107,3 +5108,14 @@
 # define machine_is_nsa310s()  (0)
 #endif
 
+#ifdef CONFIG_MACH_HNCN2
+# ifdef machine_arch_type
+#  undef machine_arch_type
+#  define machine_arch_type	__machine_arch_type
+# else
+#  define machine_arch_type	MACH_TYPE_HNCN2
+# endif
+# define machine_is_hncn2()	(machine_arch_type == MACH_TYPE_HNCN2)
+#else
+# define machine_is_hncn2()	(0)
+#endif

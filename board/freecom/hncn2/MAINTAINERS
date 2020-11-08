@@ -1,0 +1,6 @@
+HNCN2 BOARD
+M:	Luka Perkov <luka@openwrt.org>
+S:	Maintained
+F:	board/freecom/hncn2/
+F:	include/configs/hncn2.h
+F:	configs/hncn2_defconfig

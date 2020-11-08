@@ -82,6 +82,9 @@ config TARGET_NETGEAR_MS2110
 
 config TARGET_T5325
         bool "HP T5325 Board"
+        
+config TARGET_HNCN2
+        bool "Freecom Silverstore HNCN2 Board"
 
 endchoice
 
@@ -112,5 +115,6 @@ source "board/zyxel/nsa320/Kconfig"
 source "board/zyxel/nsa310/Kconfig"
 source "board/Marvell/netgear_ms2110/Kconfig"
 source "board/hp/t5325/Kconfig"
+source "board/freecom/hncn2/Kconfig"
 
 endif

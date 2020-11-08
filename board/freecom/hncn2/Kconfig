@@ -1,0 +1,12 @@
+if TARGET_HNCN2
+
+config SYS_BOARD
+	default "hncn2"
+
+config SYS_VENDOR
+	default "freecom"
+
+config SYS_CONFIG_NAME
+	default "hncn2"
+
+endif
